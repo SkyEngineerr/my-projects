@@ -1,0 +1,37 @@
+<div id="search2">
+    <div class="container" align="center">
+        <p class="lead mt-2 mb-0 text-light">Welcome <%= name %>. If you want to logout, please click
+            <a href="/users/logout" >here!</a>
+        </p>
+        <img src="photos/dp2.png" class="img-fluid mt-3" alt="Responsive image" width="400px">
+        <a href="dashboard"><img src="photos/Untitled.jpg" id="head_img" class="img-fluid" alt="Responsive image"></a>
+        
+        <div class="row col-12 d-flex justify-content-center mt-3" >
+            <form id="submit" action="/dashboard" method="POST">
+                <div class="input-group mb-3" >
+                    <input type="text" id="search" name="term" class="form-control" placeholder="Search...">
+                    <div class="input-group-append">
+                      <button  class="btn btn-outline-secondary" type="submit" ><i class="fas fa-search"></i></button>
+                    </div>
+                    <button type="button" class="btn btn-light ml-2" id="random" >  Choose Randomly</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="mt-5" id="loading">
+            <img id="loading-image" class="img-fluid" src="https://media2.giphy.com/media/XDUqePoQvWHhm/source.gif" height="360px" />
+            <!-- <img id="loading-image" src="https://i1.wp.com/media.boingboing.net/wp-content/uploads/2015/10/oqnfwbC2.gif?w=970" alt="Loading..." /> -->
+        </div>  
+        
+        <div id="result-heading"></div>
+
+        <div class="heroes row mt-3 justify-content-center" id="heroes"></div>
+
+        <div class="row mt-5" id="comic_Count"></div>
+        
+        <div class="row mt-5" id="comicSection"></div>
+        
+      </div>
+</div>        
+     
+   
